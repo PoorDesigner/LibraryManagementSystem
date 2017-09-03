@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>LibraryManagementSystem</title>
@@ -8,7 +9,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+
+<body class="skin-blue sidebar-mini">
+  <div class="wrapper" style="height: auto; min-height: 100%;">
+    <header class="main-header">
+      <a href="../index2.html" class="logo">
+        <span class="logo-mini">LMS</span>
+        <span class="logo-lg"><b>LMS</b></span>
+      </a>
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      </nav>
+    </header>
+
+    <aside class="main-sidebar">
+      <section class="sidebar" style="height: auto;">
+        <ul class="sidebar-menu tree" data-widget="tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="treeview">
+            <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              </a>
+          </li>
+          <li class="treeview">
+            <a href="#">
+            <i class="fa fa-edit"></i> <span>Categories</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+            <ul class="treeview-menu">
+              <li><a href=""><i class="fa fa-circle-o"></i> Technical</a></li>
+              <li><a href=""><i class="fa fa-circle-o"></i> Educational</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper" style="min-height:901px">
+      <app-root></app-root>
+    </div>
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+      </div>
+      <strong><a target="_blank" href="http://ggktech.com/company/about/">GGK Tech</a></strong>
+    </footer>
+  </div>
 </body>
+
 </html>

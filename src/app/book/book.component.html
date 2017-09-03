@@ -1,0 +1,33 @@
+<div class="row">
+
+  <div *ngFor="let book of books" class="col-lg-3 col-md-6">
+    <div class="card card-product" >
+      <div class="card-image" data-header-animation="true">
+        <a href="#pablo">
+                            <img class="img" src="../assets/img/book.jpg">
+                        </a>
+      </div>
+      <div class="card-content">
+        <div class="card-actions book-action-icons">
+            <i class="fa fa-edit book-action-icons" title="Edit book"></i>
+            <i class="fa fa-plus book-action-icons" title="Add copy"></i>
+            <i class="fa fa-remove" title="Delete copy"></i>
+        </div>
+        <h4 class="card-title">
+                            <a href="#pablo">{{book.name}}</a>
+                        </h4>
+        <div class="card-description">
+          {{book.description}} </div>
+      </div>
+      <div class="card-footer">
+        <div class="copies">
+          <h6>{{book.copies}} Copies</h6>
+        </div>
+        <div class="stats pull-right">
+          <span><strong>{{book.category}} </strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
